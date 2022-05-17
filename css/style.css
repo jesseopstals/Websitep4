@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* flexbox zorgt ervoor dat alle elements automatisch responsive worden */
+
+/* css variables */
+:root {
+  --text-color: hsl(0, 0%, 100%);
+  --body-color: hsl(224, 100%, 88%);
+  --header-color: hsl(206, 20%, 49%);
+  --shadow-color: 0 8px 32px hsla(231, 44%, 45%, .2);
+  --nav-color: hsl(212, 75%, 14%);
+  --body-font: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  position: absolute;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+.container {
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.clock {
+  font-size: 10rem;
+}
+
+.date {
+  font-size: 3.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
